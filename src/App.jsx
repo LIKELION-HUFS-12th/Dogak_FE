@@ -1,12 +1,16 @@
-import { Outlet } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
-import styled from 'styled-components';
+import MainHome from './home/homepage';
+import MyListPage from './mypage/myListPage';
 
 const App = ()=> {
   return (
-    <>
-    {/*로그인 및 상태관리 예정*/ }
-    </>
+    <Router>
+      <Routes>
+        <Route path='/' element={<MainHome/>} />
+        <Route path='/mylist' element={<MyListPage/>} />
+      </Routes>
+    </Router>
   )
 }
 
