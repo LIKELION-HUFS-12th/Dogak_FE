@@ -1,5 +1,5 @@
 import React from 'react'
-import MainHeader from './header'
+import MainHeader from '../common/header'
 import styled from 'styled-components'
 import BookReport from './bookReport'
 
