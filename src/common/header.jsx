@@ -44,15 +44,33 @@ function MainHeader() {
     if (window.confirm('정말 로그아웃 하시겠습니까?')) {
       setState(false)
       navigate('/', {replace: true})
-    }
+    };
+    console.log(state);
   }
 
   const handleLogin = () => {
+    navigate('/login')
     setState(true)
   }
-
+//임시 로그인로그아웃 함수인데 문제가 많아요 ㅎㅎ
   const LoginAndOut = () => {
-    return (state) ? <li onClick={handleLogout}>로그아웃</li> : <li onClick={handleLogin}>로그인</li>
+    return (state)
+    ? <>
+        <li onClick={handleMyPage}>
+          마이페이지
+        </li>
+        <li onClick={handleLogout}>
+          로그아웃
+        </li>
+      </>
+    : <>
+        <li>
+          회원가입
+        </li>
+        <li onClick={handleLogin}>
+          로그인
+        </li>
+      </>
   }
 
   return(
@@ -65,9 +83,6 @@ function MainHeader() {
           <ul>
             <li>
               도각모집
-            </li>
-            <li onClick={handleMyPage}>
-              마이페이지
             </li>
             <LoginAndOut/>
           </ul>
