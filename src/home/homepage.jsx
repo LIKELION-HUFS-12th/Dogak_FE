@@ -4,9 +4,16 @@ import Logo from "../common/logo";
 export default function MainHome(){
     return(
         <>
+        <LogoContainer>
         <Logo/>
-        <h1>Test Test</h1>
-        <h2>누구 있습니까?</h2>
+        </LogoContainer>
+        <h1>연결 Check~!</h1>
         </>
     );
 }
+
+const LogoContainer = styled.div`
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    `
