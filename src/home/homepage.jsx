@@ -14,7 +14,7 @@ export default function MainHome(){
         <div>
             <Logo/>
             <h1>Test Test</h1>
-            <h2>누구 있습니까?</h2>
+            <h2>노트북연결완료</h2>
             <button onClick={handleMyList}>MyList보러가기</button>
         </div>
         
