@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Logo from "../common/logo";
+import MainRecord from "./record_book";
 import { useNavigate } from "react-router-dom";
 import MainHeader from "../common/header";
 
@@ -13,9 +14,9 @@ export default function MainHome(){
         <MainHeader/>
         <div>
             <Logo/>
-            <h1>Test Test</h1>
-            <h2>노트북연결완료</h2>
             <button onClick={handleMyList}>MyList보러가기</button>
+            <MainRecord/>
+            
         </div>
         
         </>
