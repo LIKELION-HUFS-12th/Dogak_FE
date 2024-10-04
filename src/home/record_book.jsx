@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import SampleBook from "./sample_book"
 
 const RecordContiner = styled.div`
     margin-left: 60px;
@@ -20,13 +21,22 @@ const Lower = styled.div`
     width: 533px;
     padding : 10px;
 `
+
+const Recent = styled.h1`
+    font-size: 20px;
+    margin-left : 20px;
+    color: #432D2D;
+
+`
+
 export default function MainRecord(){
 
     return(
         <div>
             <RecordContiner>
                 <Upper>
-                    <h1> UP</h1>
+                    <Recent>통장 최근기록</Recent>
+                    <SampleBook/>
                 </Upper>
                 <Lower>
                     <h1>Down</h1>
