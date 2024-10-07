@@ -14,6 +14,7 @@ export default function MainHome(){
         <MainHeader/>
         <div>
             <Logo/>
+            {/* 현재 지금보러가기 버튼 통해서도 같은 기능 이동 가능*/}
             <button onClick={handleMyList}>MyList보러가기</button>
             <MainRecord/>
             
