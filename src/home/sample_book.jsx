@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 const ImgSize = styled.img`
-    width : 300px;
-    height: 200px;
+    width : 370px;
+    height: 250px;  
+    display: block;
 
 `
 export default function SampleBook(){
