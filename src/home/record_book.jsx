@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import UpperSide from "./upper"
-
+import LowerSide from "./lower"
 
 const RecordContiner = styled.div`
     margin-left: 60px;
@@ -24,9 +24,7 @@ export default function MainRecord(){
         <div>
             <RecordContiner>
                 <UpperSide/>
-                <Lower>
-                    <h1>Down</h1>
-                </Lower>
+                <LowerSide/>
             </RecordContiner>
         </div>
     )
