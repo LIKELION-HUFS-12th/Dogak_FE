@@ -33,11 +33,12 @@ const ShowInput = styled.div`
   }
 `
 
+
 export default function Login() {
   return (
     <>
       <MainHeader/>
-      <Logo/>
+      <Logo size = "250px"/>
       <LoginContainer>
         <ShowInput>
           <InputA placeholder='아이디'/>
