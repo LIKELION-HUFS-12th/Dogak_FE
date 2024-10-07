@@ -7,13 +7,13 @@ const LogoContainer = styled.div`
 
     img {
         object-fit: cover;
-        width: 250px;
+        width: ${({ size }) => size || '250px'}; /* size prop에 따라 너비 설정 */
     }
 `
 
-export default function Logo(){
+export default function Logo({size}){
     return(
-        <LogoContainer>
+        <LogoContainer size = {size}>
             <img className = "LogoImg" alt= "MainLogo" src = "../../public/Logo_Dogak.svg"></img>
         </LogoContainer>
     );
