@@ -8,14 +8,6 @@ const RecordContiner = styled.div`
 
 `
 
-const Lower = styled.div`
-    background-color : #766055;
-    border-radius : 10px;
-    height: 252px;
-    width: 533px;
-    padding : 10px;
-`
-
 
 
 export default function MainRecord(){

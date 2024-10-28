@@ -69,7 +69,7 @@ const WriteButton = styled.button`
 `
 
 export default function UpperSide() {
-  // 임시로 버튼 우르면 mylist로 옮겨가게 세팅해둠
+  // 임시로 버튼 누르면 mylist로 옮겨가게 세팅해둠
   const navigate = useNavigate();
   const handleMyList = () => {
       navigate("/mylist")
