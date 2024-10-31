@@ -7,6 +7,7 @@ const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
 `
+
 const Logo = styled.p`
   width: 65px;
   height: 65px;
