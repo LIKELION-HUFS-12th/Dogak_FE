@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import Logo from "../common/logo";
+import Logo from "../../common/logo";
 import MainRecord from "./record_book";
 import { useNavigate } from "react-router-dom";
-import MainHeader from "../common/header";
+import MainHeader from "../../common/header";
 
 import Introduction from "./intro";
 
